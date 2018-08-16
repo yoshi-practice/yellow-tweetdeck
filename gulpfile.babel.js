@@ -124,7 +124,7 @@ gulp.task('wiredep', () => {
 gulp.task('package', function () {
   var manifest = require('./dist/manifest.json');
   return gulp.src('dist/**')
-      .pipe($.zip('my_extension-' + manifest.version + '.zip'))
+      .pipe($.zip('Yellow Deck-' + manifest.version + '.zip'))
       .pipe(gulp.dest('package'));
 });
 
